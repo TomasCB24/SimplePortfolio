@@ -18,7 +18,7 @@ const Projects = () => {
 
   const fetchProjects = () => {
     axios
-      .get('http://127.0.0.1:8000/projects', {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/projects`, {
         headers: {
           Accept: 'application/json',
         },

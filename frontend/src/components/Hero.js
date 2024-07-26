@@ -22,7 +22,7 @@ const Hero = () => {
 
   const fetchHero = () => {
     axios
-      .get('http://127.0.0.1:8000/hero', {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/hero`, {
         headers: {
           Accept: 'application/json',
         },

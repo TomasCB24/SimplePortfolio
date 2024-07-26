@@ -15,7 +15,7 @@ const About = () => {
 
   const fetchAbout = () => {
     axios
-      .get('http://127.0.0.1:8000/about', {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/about`, {
         headers: {
           Accept: 'application/json',
         },

@@ -14,7 +14,7 @@ const Education = () => {
 
   const fetchEducation = () => {
     axios
-      .get('http://127.0.0.1:8000/education', {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/education`, {
         headers: {
           Accept: 'application/json',
         },

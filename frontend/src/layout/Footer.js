@@ -12,7 +12,7 @@ const Footer = () => {
 
   const fetchFooter = () => {
     axios
-      .get('http://127.0.0.1:8000/footer', {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/footer`, {
         headers: {
           Accept: 'application/json',
         },

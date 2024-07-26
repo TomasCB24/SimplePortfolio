@@ -21,7 +21,7 @@ describe('Home page', () => {
         },
       ],
     });
-    const res = await axios.get('http://127.0.0.1:8000/hero');
+    const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/hero`);
     expect(res).toEqual({
       data: [
         {
