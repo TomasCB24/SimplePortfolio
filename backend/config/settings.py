@@ -135,8 +135,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
   'http://localhost:3000',
-  'https://simpleportfolio-production.up.railway.app:8080'
+  'https://simpleportfolio-production.up.railway.app:8080',
+  "https://simple-portfolio-orcin.vercel.app/",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://simpleportfolio-production.up.railway.app",
+    "https://simple-portfolio-orcin.vercel.app/",
+]
 
 FILE_UPLOAD_PERMISSIONS = 0o640
