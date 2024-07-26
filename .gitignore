@@ -1,0 +1,8 @@
+*.pyc
+.DS_Store
+build/
+coverage/
+node_modules/ 
+venv/
+*/migrations/*
+!*/migrations/__init__.py
